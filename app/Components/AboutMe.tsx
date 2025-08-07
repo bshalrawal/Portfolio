@@ -13,7 +13,7 @@ const AboutMe = () => {
       
      
       <p className="text-lg text-white leading-relaxed break-words">
-I’m Bishal Rawal, a passionate BIT student at MIT,Bagbazaar with a drive to blend creativity and technology. I currently work as a Graphic Designer at Simjung Tech, where I create visual content that aligns with modern branding standards. With a background in digital marketing from Karu Learning and Rapid Software Technologies, I bring both strategy and style to the table. I'm always eager to learn, explore new platforms, and turn innovative ideas into impactful results.      </p>
+I’m Bishal Rawal, currently working at Simjung Tech as graphic designer, where I create visual content that aligns with modern branding standards. With a background in digital marketing from Karu Learning and Rapid Software Technologies, I bring both strategy and style to the table. I'm always eager to learn, explore new platforms, and turn innovative ideas into impactful results.      </p>
  
 
     </div>
