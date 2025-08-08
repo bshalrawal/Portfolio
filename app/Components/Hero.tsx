@@ -46,14 +46,16 @@ const Hero = () => {
           className="text-5xl md:text-7xl font-extrabold leading-tight"
           variants={childVariants}
         >
-          <motion.span
-            className="inline-block bg-gradient-to-r from-cyan-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent"
-            style={{ backgroundSize: '200% 200%' }}
-            animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
-            transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
-          >
+          <motion.span className="inline-block">
             {firstName.split('').map((char, idx) => (
-              <motion.span key={`fn-${idx}`} className="inline-block" variants={charVariants}>
+              <motion.span
+                key={`fn-${idx}`}
+                className="inline-block bg-gradient-to-r from-cyan-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent"
+                style={{ backgroundSize: '200% 200%' }}
+                animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
+                transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
+                variants={charVariants}
+              >
                 {char}
               </motion.span>
             ))}
