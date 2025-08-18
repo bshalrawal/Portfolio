@@ -5,10 +5,10 @@ import type { JSX } from 'react';
 import { SiReact, SiNextdotjs, SiFirebase, SiTailwindcss } from "react-icons/si";
 
 const techIcons: { [key: string]: JSX.Element } = {
-  react: <SiReact className="text-cyan-400 w-8 h-8" />,
-  nextjs: <SiNextdotjs className="text-black dark:text-white w-8 h-8" />,
-  firebase: <SiFirebase className="text-amber-500 w-8 h-8" />,
-  tailwind: <SiTailwindcss className="text-cyan-500 w-8 h-8" />,
+  react: <SiReact className="text-cyan-400 text-2xl" />,
+  nextjs: <SiNextdotjs className="text-black dark:text-white text-2xl" />,
+  firebase: <SiFirebase className="text-amber-500 text-2xl" />,
+  tailwind: <SiTailwindcss className="text-cyan-500 text-2xl" />,
 };
 
 interface ProjectCardProps {
@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
 
       <div className="flex flex-wrap items-center gap-4 mb-6">
         {technologies.map((tech, index) => (
-          <div key={index} className="w-10 h-10 flex items-center justify-center" title={tech}>
+          <div key={index} className="flex items-center justify-center" title={tech}>
             {techIcons[tech.toLowerCase()] || (
               <span className="text-sm font-medium text-gray-500">{tech}</span>
             )}
@@ -57,7 +57,7 @@ const Projects = () => {
       title: 'Kathmandu Review',
       description: 'A site for publishing reviews and rankings, built with Next.js and Firebase for a fast, modern web experience and easy data management.',
       technologies: ['nextjs', 'react', 'firebase', 'tailwind'],
-      liveLink: '#', // Placeholder link
+      liveLink: '#',
     },
     {
       id: 2,
