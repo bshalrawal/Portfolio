@@ -156,7 +156,7 @@ const Hero = () => {
 
         <motion.a
           className='btn btn-accent mt-8 p-7 text-lg md:text-xl'
-          href="https://smallpdf.com/file#s=643def8f-aac1-4e90-8e77-ceae72920744"
+          href="#"
           variants={childVariants}
           whileHover={{ scale: 1.04, y: -2 }}
           whileTap={{ scale: 0.98 }}
