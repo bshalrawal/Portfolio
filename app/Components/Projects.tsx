@@ -76,7 +76,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto my-20 px-4 sm:px-6 lg:px-8 text-white min-h-screen">
+    <section
+      id="projects"
+      className="max-w-6xl mx-auto py-20 px-4 sm:px-6 lg:px-8 text-white"
+    >
       <h2 className="text-4xl underline-offset-4 underline font-extrabold text-center mb-12 sm:text-5xl tracking-wide">
         My Projects
       </h2>
