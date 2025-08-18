@@ -62,7 +62,7 @@ const Projects = () => {
       title: 'Kathmandu Review',
       description: 'A site for publishing reviews and rankings, built with Next.js and Firebase for a fast, modern web experience and easy data management.',
       technologies: ['nextjs', 'react', 'firebase', 'tailwind'],
-      liveLink: 'www.kathmandureview.com',
+      liveLink: 'https://www.kathmandureview.com/',
     },
     {
       id: 2,
