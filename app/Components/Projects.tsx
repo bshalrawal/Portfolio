@@ -62,21 +62,21 @@ const Projects = () => {
       title: 'Kathmandu Review',
       description: 'A site for publishing reviews and rankings, built with Next.js and Firebase for a fast, modern web experience and easy data management.',
       technologies: ['nextjs', 'react', 'firebase', 'tailwind'],
-      liveLink: '#',
+      liveLink: 'www.kathmandureview.com',
     },
     {
       id: 2,
       title: 'Karvika Thapa Portfolio',
       description: 'A personal portfolio website with an integrated CMS (Content Management System) to allow for easy updates to the content without touching the code.',
       technologies: ['react', 'tailwind'],
-      liveLink: '#',
+      liveLink: 'https://karvika-port.vercel.app/',
     },
     {
       id: 3,
       title: 'Gyanendra Shahi Portfolio',
       description: 'A portfolio site for Gyanendra Shahi, featuring a CMS for dynamic content updates and a sleek, responsive design.',
       technologies: ['react', 'tailwind'],
-      liveLink: '#',
+      liveLink: 'https://gyanendra-port-ukst.vercel.app/',
     },
   ];
 
