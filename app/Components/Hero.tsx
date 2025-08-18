@@ -155,7 +155,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.a
-          className='btn btn-accent mt-8 p-7 text-lg md:text-xl'
+          className='btn btn-accent hidden mt-8 p-7 text-lg md:text-xl'
           href="#"
           variants={childVariants}
           whileHover={{ scale: 1.04, y: -2 }}
