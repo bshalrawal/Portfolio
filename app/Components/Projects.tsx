@@ -20,41 +20,36 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, liveLink }) => {
   return (
-    <div className="relative rounded-lg shadow-xl p-[2px] transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-      {/* Gradient border */}
-      <div className="absolute inset-0 rounded-lg bg-gradient-to-tr from-fuchsia-500/25 to-cyan-400/20 blur-xl opacity-60"></div>
+    <div className="rounded-lg shadow-xl p-8 flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl bg-gradient-to-tr from-fuchsia-500/25 to-cyan-400/20">
+      <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
+      <p className="text-gray-200 mb-4 flex-grow leading-relaxed">{description}</p>
 
-      {/* Card content */}
-      <div className="relative rounded-lg p-8 flex flex-col justify-between border border-gray-100 bg-gray-800">
-        <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
-        <p className="text-gray-300 mb-4 flex-grow leading-relaxed">{description}</p>
+      <div className="flex flex-wrap items-center gap-4 mb-6">
+        {technologies.map((tech, index) => (
+          <div key={index} className="flex items-center justify-center" title={tech}>
+            {techIcons[tech.toLowerCase()] || (
+              <span className="text-sm font-medium text-gray-300">{tech}</span>
+            )}
+          </div>
+        ))}
+      </div>
 
-        <div className="flex flex-wrap items-center gap-4 mb-6">
-          {technologies.map((tech, index) => (
-            <div key={index} className="flex items-center justify-center" title={tech}>
-              {techIcons[tech.toLowerCase()] || (
-                <span className="text-sm font-medium text-gray-500">{tech}</span>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-          {liveLink && (
-            <a
-              href={liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 inline-block bg-green-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-green-700 transition-colors duration-300 text-center text-lg"
-            >
-              Live Demo
-            </a>
-          )}
-        </div>
+      <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 inline-block bg-green-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-green-700 transition-colors duration-300 text-center text-lg"
+          >
+            Live Demo
+          </a>
+        )}
       </div>
     </div>
   );
 };
+
 
 
 const Projects = () => {
