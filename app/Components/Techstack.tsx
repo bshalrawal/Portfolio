@@ -8,7 +8,11 @@ const TechStackIcons = () => {
   const icons = [
     { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
     { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
-    // Placeholder icons for Photoshop, Canva, Figma, and Premiere Pro
+    { name: 'React', icon: <FaReact className="text-cyan-400" /> },
+    { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
+    { name: 'GitHub', icon: <FaGithub className="text-gray-800 dark:text-white" /> },
+
+    // Placeholder icons for design tools
     { name: 'Photoshop', icon: <span className="text-blue-700 text-6xl font-bold">Ps</span> },
     { name: 'Canva', icon: <span className="text-cyan-500 text-6xl font-bold">Ca</span> },
     { name: 'Figma', icon: <span className="text-pink-500 text-6xl font-bold">F</span> },
@@ -16,7 +20,7 @@ const TechStackIcons = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-6  rounded-lg ">
+    <div className="flex flex-wrap justify-center gap-6 p-6 rounded-lg">
       {icons.map((tech) => (
         <div key={tech.name} className="relative group flex flex-col items-center">
           <div className="text-6xl transition-transform duration-300 ease-in-out transform hover:scale-110">
