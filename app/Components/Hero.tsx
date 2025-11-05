@@ -71,7 +71,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p className="py-5 text-lg md:text-2xl" variants={childVariants}>
-          UI/UX Designer | Digital Marketing Strategist | Graphic Designer
+          Operations Manager | UI/UX Designer | Digital Marketing Strategist 
           <br />
           <span className='text-base'>+9779763607255</span>
         </motion.p>
