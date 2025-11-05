@@ -61,7 +61,7 @@ const AboutMe = () => {
             className="mt-6 text-base md:text-lg leading-relaxed text-white/90"
             variants={childVariants}
           >
-I’m Bishal Rawal, currently working as a Web Developer and Graphic Designer at Simjung Tech. With a strong background in Digital Marketing from Karu Learning and Rapid Software Technologies, I bring together design, coding, and branding expertise to create impactful digital solutions. Passionate about combining creativity with technology, I’m always eager to learn, adapt, and explore new platforms.
+I’m Bishal Rawal, currently working as Cheif Operations Officier (COO) at Nexon Inc, and Operations Manager at Elfbar and Lost Mary. With a strong background in Digital Marketing from Karu Learning and Rapid Software Technologies, I bring together design, coding, and branding expertise to create impactful digital solutions. Passionate about combining creativity with technology, I’m always eager to learn, adapt, and explore new platforms.
           </motion.p>
 
           <motion.div
