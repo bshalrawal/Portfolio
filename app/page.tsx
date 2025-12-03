@@ -22,14 +22,10 @@ export default function Home() {
         <AboutMe/>
       </section>
 
-      <section id="about">
-        <Awards/>
-      </section>
+    
 
 
-      <section id="projects">
-        <Projects/>
-      </section>
+  
 
       <section id="skills">
         <Skills/>
@@ -38,6 +34,7 @@ export default function Home() {
       <section id="contact">
         <ContactUs/>
       </section>
+      
       <Footer/>
     </div>
   );
